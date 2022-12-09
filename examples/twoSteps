@@ -1,0 +1,5 @@
+var i = 5
+while i < 10
+	out i
+	i = i + 2
+end

@@ -1,0 +1,6 @@
+;liest die Grundseite und Hoehe eines Dreiecks ein und gibt den Flaecheninhalt aus
+var grundseite = (num)(in "Grundseite: ")
+var hoehe = (num)(in "Hoehe: ")
+
+var flInhalt = grundseite * hoehe / 2
+out "Flaecheninhalt: " + flInhalt

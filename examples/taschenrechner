@@ -1,0 +1,20 @@
+; Zwei Zahlen werden eingelesen
+var zahl1 = (num)(in "Gib die erste Zahl ein: ")
+var zahl2 = (num)(in "Gib die zweite Zahl ein: ")
+
+; verschiedene Rechnungen werden mit den beiden Zahlen gemacht
+var summe = zahl1 + zahl2
+var differenz = zahl1 - zahl2
+var multiplikation = zahl1 * zahl2
+var division = zahl1 / zahl2
+var exponential = zahl1 ^ zahl2
+var modulo = zahl1 % zahl2
+
+; die Resultate der Rechnungen werden ausgegeben
+out zahl1 + " + " + zahl2 + " = " + summe
+out zahl1 + " - " + zahl2 + " = " + differenz
+out zahl1 + " * " + zahl2 + " = " + multiplikation
+out zahl1 + " / " + zahl2 + " = " + division
+out zahl1 + " ^ " + zahl2 + " = " + exponential
+out zahl1 + " % " + zahl2 + " = " + modulo
+

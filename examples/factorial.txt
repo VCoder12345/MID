@@ -1,0 +1,12 @@
+;computes the factorial of x
+var x = (num)(in "number: ")
+
+var factorial = 1
+var i = 1
+
+while i <= x
+	factorial = factorial * i
+	i = i + 1
+end
+
+out x + "! = " + factorial

@@ -1,0 +1,17 @@
+;euclidean algorithm to compute the greatest common divisor
+
+var a = (num)(in "first number: ")
+var b = (num)(in "second number: ")
+
+;do until the two numbers become equal
+while (a != b)
+	if a > b
+		a = a - b
+	else
+		b = b - a
+	end
+end
+
+;a = b
+
+out "greatest common divisor: " + a 

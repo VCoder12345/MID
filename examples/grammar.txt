@@ -1,0 +1,19 @@
+statements      → statement*
+statement       → (out-statement | if-statement | varDecl | while-statement | assignment)? NEWLINE;
+out-statement   → "out" expr;
+if-statement    → "if" expr statements ("else" statements)? "end"
+while-statement → "while" expr statements "end"
+var-decl         → "var" "=" expr;
+assignment      → ID "=" expr;
+expr            → in-expr;
+in-expr         → "in" equality| equality
+equality        → comparison (("==" | "!=") comparison)*
+comparison      → term (("<" | "<=" | ">" | ">=") term)*
+term            → factor (("+" | "-") factor)*;
+factor          → power (("*" | "/") power)*;
+power           → unary ("^" unary)*;
+unary           → ("!" | (("+"|"-"))* | ("(" type-name ")") )) primary;
+primary         → "(" expr ")" | type;
+type            → NUMBER | STRING | TRUE | FALSE | NIL | ID;
+type-name       → NUMBER_TYPE | STRING_TYPE | BOOL_TYPE
+

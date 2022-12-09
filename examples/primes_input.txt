@@ -1,0 +1,25 @@
+var i = (num)(in "from: ")
+var b = (num)(in "to: ")
+
+out "---prime numbers from " + i + " to " + b + "---"
+
+while i <= b
+    var c = 2
+    var prime = true
+    while c < i
+        if i % c == 0
+            c = i
+            prime = false
+        end
+        c = c + 1
+    end
+    if prime
+        out i
+    end
+
+    i = i + 1
+end
+
+
+
+
