@@ -137,14 +137,6 @@ public class InterpreterApp {
 				System.err.println(ex.getClass().getSimpleName());
 			} catch (IOException e) {
 				System.err.println("Could not open the file at " + app.sourcePath);
-				e.printStackTrace();
-			}
-			
-			//keep the console open
-			Console console = System.console();
-			if(console != null) {
-				System.out.println("Press 'Enter' key to exit");
-				console.readLine();
 			}
 		}
 	}

@@ -12,7 +12,7 @@ import parsing.Parser;
 public class VMTest {
 	//runs the virtual machine on the primes.txt and prints out the time it takes for compilation and for execution
 	public static void main(String[] args) throws IOException {
-		String inputText = Files.readString(Path.of("files/primes.txt"));
+		String inputText = Files.readString(Path.of("examples/primes.txt"));
 		
 		long compilationStart = System.currentTimeMillis();
 		Lexer lexer = new Lexer(inputText);

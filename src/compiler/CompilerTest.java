@@ -12,7 +12,7 @@ import parsing.Parser;
 public class CompilerTest {
 
 	public static void main(String[] args) throws IOException {
-		Lexer lexer = new Lexer(Files.readString(Path.of("files/test.txt")));
+		Lexer lexer = new Lexer(Files.readString(Path.of("examples/factorial.txt")));
 		Parser parser = new Parser(lexer);
 		AST tree = parser.parse();
 		Compiler compiler = new Compiler();
